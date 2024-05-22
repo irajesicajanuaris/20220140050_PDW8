@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pendaftaran</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Form Pertemanan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobi.html">My Hobbies</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="form.html"
+                >Form <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container mt-5 pt-5">
+      <form class="form-container">
+        <fieldset>
+          <legend>Formulir Calon Teman</legend>
+          <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>Jenis Kelamin:</label><br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="jk"
+                id="laki-laki"
+                value="laki-laki"
+                checked
+              />
+              <label class="form-check-label" for="laki-laki"
+                >Laki - Laki</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="jk"
+                id="perempuan"
+                value="perempuan"
+              />
+              <label class="form-check-label" for="perempuan">Perempuan</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Sosial Media Apa yang Kamu Mainkan:</label><br />
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="instagram"
+                name="instagram"
+              />
+              <label class="form-check-label" for="instagram">Instagram</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="Twitter"
+                name="Twitter"
+              />
+              <label class="form-check-label" for="Facebook">Facebook</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="Facebook"
+                name="Twitter"
+              />
+              <label class="form-check-label" for="Twitter">Twitter</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="siap">Apakah Kamu Bersedia:</label>
+            <select id="siap" name="siap" class="form-control">
+              <option>Ya</option>
+              <option>Tidak</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="jawaban">Apa yang iiingin anda tanyakan?</label>
+            <textarea
+              id="jawaban"
+              name="jawaban"
+              rows="5"
+              class="form-control"
+              placeholder="Tulis jawaban Anda di sini"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-light">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
